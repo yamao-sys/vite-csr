@@ -9,7 +9,12 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "prettier",
   ],
-  ignorePatterns: ["dist", ".eslintrc.cjs", "vite.config.js"],
+  ignorePatterns: [
+    "dist",
+    ".eslintrc.cjs",
+    "vite.config.js",
+    "vitest.config.ts",
+  ],
   parser: "@typescript-eslint/parser",
   plugins: ["react-refresh"],
   rules: {
@@ -37,7 +42,7 @@ module.exports = {
       },
       {
         selector: "method",
-        format: ["camelCase"],
+        format: ["camelCase", "CamelCase"],
       },
       {
         selector: "property",

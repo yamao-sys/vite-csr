@@ -1,4 +1,4 @@
-import { BaseLayout } from "../BaseLayout";
+import { BaseLayout } from "../../../components/BaseLayout";
 
 type Props = {
   phase: "form" | "confirm" | "thanks";

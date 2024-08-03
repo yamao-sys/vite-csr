@@ -1,5 +1,5 @@
 import { BaseButton } from "../../../../../components/atoms/BaseButton";
-import { postSignUp } from "../../../actions/postSignUp";
+import { useSignUp } from "../../hooks/useSignUp";
 import { useSignUpContext } from "../../contexts/SignUpContext";
 import { PhaseType } from "../../types";
 import { SignUpBaseLayout } from "../SignUpBaseLayout";
@@ -16,7 +16,7 @@ export const SignUpConfirmation = ({ togglePhase }: Props) => {
 
   const handleSignUp = async () => {
     try {
-      await postSignUp({
+      await useSignUp({
         name: inputName,
         email: inputEmail,
         password: inputPassword,

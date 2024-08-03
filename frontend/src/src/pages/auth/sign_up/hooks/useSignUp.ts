@@ -1,8 +1,8 @@
-import { getAuthApiClient } from "./getAuthApiClient";
-import { SignUpDto } from "../../../api/auth/@types";
+import { useAuthApiClient } from "../../hooks/useAuthApiClient";
+import { SignUpDto } from "../../../../api/auth/@types";
 
-export const postSignUp = async (data: SignUpDto) => {
-  const client = getAuthApiClient();
+export const useSignUp = async (data: SignUpDto) => {
+  const client = useAuthApiClient();
   const response = await client.auth.signUp.post({
     body: {
       name: data.name,

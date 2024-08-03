@@ -1,7 +1,7 @@
 import aspida from "@aspida/fetch";
 import api from "../../../api/auth/$api";
 
-export const getAuthApiClient = () => {
+export const useAuthApiClient = () => {
   const baseFetchConditions = {
     // baseURL: process.env.BASE_API_URL,
     baseURL: "http://localhost:8000",

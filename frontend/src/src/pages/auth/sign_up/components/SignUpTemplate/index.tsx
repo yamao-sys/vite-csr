@@ -1,4 +1,4 @@
-import { SignUpForm } from "../../organisms/SignUpForm";
+import { SignUpForm } from "../SignUpForm";
 
 export const SignUpTemplate = () => {
   return (

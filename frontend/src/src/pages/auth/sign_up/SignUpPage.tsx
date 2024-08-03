@@ -1,5 +1,5 @@
 import { SignUpProvider } from "./contexts/SignUpContext";
-import { SignUpTemplate } from "./templates/SignUpTemplate";
+import { SignUpTemplate } from "./components/SignUpTemplate";
 
 export const SignUpPage = () => {
   return (

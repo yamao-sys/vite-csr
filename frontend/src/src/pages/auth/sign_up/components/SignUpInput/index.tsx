@@ -6,7 +6,7 @@ import { BaseFormBox } from "../../../../../components/atoms/BaseFormBox";
 import { InputForm } from "../../../../../components/atoms/InputForm";
 import { ValidationErrors } from "../../../../../components/molecules/ValidationErrors";
 import { SubmitButton } from "../../../../../components/molecules/SubmitButton";
-import { postValidateSignUp } from "../../../actions/postValidateSignUp";
+import { useValidateSignUp } from "../../hooks/useValidateSignUp";
 
 type Props = {
   togglePhase: (newPhase: PhaseType) => void;
@@ -58,7 +58,7 @@ export const SignUpInput = ({ togglePhase }: Props) => {
     setPasswordConfirmValidationErrors([]);
 
     try {
-      const response = await postValidateSignUp({
+      const response = await useValidateSignUp({
         name: inputName,
         email: inputEmail,
         password: inputPassword,

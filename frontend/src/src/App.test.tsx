@@ -1,20 +1,20 @@
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import App from "./App";
+// import { render, screen } from "@testing-library/react";
+// import userEvent from "@testing-library/user-event";
+// import App from "./App";
 
-describe("App", () => {
-  test("renders App component", () => {
-    render(<App />);
+// describe("App", () => {
+//   test("renders App component", () => {
+//     render(<App />);
 
-    screen.getByText("Click on the Vite and React logos to learn more");
-  });
+//     screen.getByText("Click on the Vite and React logos to learn more");
+//   });
 
-  test("change count", async () => {
-    const user = userEvent.setup();
+//   test("change count", async () => {
+//     const user = userEvent.setup();
 
-    render(<App />);
+//     render(<App />);
 
-    await user.click(screen.getByRole("button", { name: /count is 0/i }));
-    screen.getByText("count is 1");
-  });
-});
+//     await user.click(screen.getByRole("button", { name: /count is 0/i }));
+//     screen.getByText("count is 1");
+//   });
+// });

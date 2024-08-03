@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { PhaseType } from "../../../sign_up/types";
+import { PhaseType } from "../../types";
 import { SignUpConfirmation } from "../SignUpConfirmation";
 import { SignUpInput } from "../SignUpInput";
 import { SignUpThanks } from "../SignUpThanks";
